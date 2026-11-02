@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <!-- Eslatma: Foydalanuvchi talabiga ko'ra responsive dizayn qo'llanilmagan, qat'iy desktop o'lcham (1440px) -->
+  <title>ApexCRM • Korporativ Savdo va Mijozlar Boshqaruvi Tizimi</title>
+  <meta name="description" content="Kompaniyalar uchun zamonaviy va professional CRM boshqaruv tizimi. Savdo voronkasi, mijozlar bazasi, bitimlar va analitika.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Asosiy CRM Ilovasi (Qat'iy 1440px Desktop Tuzilmasi) -->
+  <div class="crm-wrapper">
+    
+    <!-- Chap Yon Panel (Sidebar: 270px) -->
+    <aside class="crm-sidebar" id="crmSidebar">
+      <!-- Brend Logotipi -->
+      <div class="sidebar-header">
+        <div class="logo-box">
+          <div class="logo-symbol">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">Apex<span class="highlight">CRM</span></span>
+            <span class="logo-subtitle">Enterprise OS v3.4</span>
+          </div>
+        </div>
+        <span class="badge-pro">PRO</span>
+      </div>
+
+      <!-- Tezkor Statistika Bloki -->
+      <div class="sidebar-target-card">
+        <div class="target-card-header">
+          <span class="target-title">Savdo Rejasi (Noyabr)</span>
+          <span class="target-percent">86.4%</span>
+        </div>
+        <div class="target-progress-track">
+          <div class="target-progress-bar" style="width: 86.4%;"></div>
+        </div>
+        <div class="target-details">
+          <span>Tushum: <strong>$184,520</strong></span>
+          <span>Reja: $210,000</span>
+        </div>
+      </div>
+
+      <!-- Navigatsiya Menusi -->
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">ASOSIY MENYU</div>
+        <ul class="nav-list">
+          <li class="nav-item active" data-tab="dashboard">
+            <a href="javascript:void(0)" class="nav-link">
+              <span class="nav-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+              </span>
+              <span class="nav-label">Boshqaruv Paneli</span>
+              <span class="nav-pill active-pill">Jonli</span>
+            </a>
+          </li>
+          <li class="nav-item" data-tab="deals">
+            <a href="javascript:void(0)" class="nav-link">
+              <span class="nav-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </span>
+              <span class="nav-label">Savdo Voronkasi</span>
+              <span class="nav-count">28</span>
+            </a>
+          </li>
+          <li class="nav-item" data-tab="contacts">
+            <a href="javascript:void(0)" class="nav-link">
+              <span class="nav-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </span>
+              <span class="nav-label">Mijozlar Bazasi</span>
+              <span class="nav-count">142</span>
+            </a>
+          </li>
+          <li class="nav-item" data-tab="leads">
+            <a href="javascript:void(0)" class="nav-link">
+              <span class="nav-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+              </span>
+              <span class="nav-label">Lidlar Oqimi</span>
+              <span class="nav-badge new-badge">14 yangi</span>
+            </a>
+          </li>
+          <li class="nav-item" data-tab="tasks">
+            <a href="javascript:void(0)" class="nav-link">
+              <span class="nav-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                  <path d="M9 14l2 2 4-4"></path>
+                </svg>
+              </span>
+              <span class="nav-label">Vazifalar & Taqvim</span>
+              <span class="nav-count">7</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav-section-label">ANALITIKA VA BOSHQARUV</div>
+        <ul class="nav-list">
+          <li class="nav-item" data-tab="analytics">
+            <a href="javascript:void(0)" class="nav-link">
+              <span class="nav-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </span>
+              <span class="nav-label">Savdo Analitikasi</span>
+            </a>
+          </li>
+          <li class="nav-item" data-tab="team">
+            <a href="javascript:void(0)" class="nav-link">
+              <span class="nav-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </span>
+              <span class="nav-label">Menejerlar KPI</span>
+            </a>
+          </li>
+          <li class="nav-item" data-tab="settings">
+            <a href="javascript:void(0)" class="nav-link">
+              <span class="nav-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </span>
+              <span class="nav-label">Tizim Sozlamalari</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Foydalanuvchi Profili Qismi -->
+      <div class="sidebar-user-footer">
+        <div class="user-avatar-wrap">
+          <img src="assets/images/manager1.jpg" alt="Alisher Zokirov" class="user-avatar-img">
+          <span class="user-status-dot"></span>
+        </div>
+        <div class="user-info-text">
+          <div class="user-full-name">Alisher Zokirov</div>
+          <div class="user-role-badge">Bosh Savdo Menejeri</div>
+        </div>
+        <button class="user-action-btn" title="Chiqish yoki Sozlamalar" id="userMenuBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="5" r="1"></circle>
+            <circle cx="12" cy="19" r="1"></circle>
+          </svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Asosiy Ish Maydoni (Main Content: 1170px) -->
+    <main class="crm-main-content">
+      
+      <!-- Yuqori Boshqaruv Qatori (Top Navbar) -->
+      <header class="crm-topbar">
+        <div class="topbar-search-group">
+          <span class="search-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <input type="text" id="globalSearchInput" placeholder="Mijozlar, bitimlar, kompaniyalar yoki telefon raqami bo'yicha izlash..." class="topbar-search-input">
+          <span class="keyboard-shortcut">Ctrl + K</span>
+        </div>
+
+        <div class="topbar-actions">
+          <!-- Vaqt va Chorak indikatori -->
+          <div class="topbar-chip date-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Noyabr 2026 • 4-Chorak</span>
+          </div>
+
+          <!-- Jonli Status -->
+          <div class="topbar-chip online-chip">
+            <span class="pulsing-emerald-dot"></span>
+            <span>CRM Server: Faol (Toshkent)</span>
+          </div>
+
+          <!-- Bildirishnomalar -->
+          <div class="notification-wrapper">
+            <button class="topbar-icon-btn" id="notifBtn" title="Bildirishnomalar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+              <span class="notif-count-badge">3</span>
+            </button>
+            <!-- Bildirishnoma oynachasi -->
+            <div class="notif-dropdown" id="notifDropdown">
+              <div class="notif-header">
+                <span>Bildirishnomalar (3 yangi)</span>
+                <a href="javascript:void(0)" class="mark-all-read">Barchasini o'qish</a>
+              </div>
+              <ul class="notif-list">
+                <li class="notif-item unread">
+                  <span class="notif-bullet"></span>
+                  <div class="notif-content">
+                    <p class="notif-msg"><strong>Artel Electronics</strong> $28,500 lik shartnomani imzolashga tayyorligini bildirdi.</p>
+                    <span class="notif-time">10 daqiqa oldin</span>
+                  </div>
+                </li>
+                <li class="notif-item unread">
+                  <span class="notif-bullet"></span>
+                  <div class="notif-content">
+                    <p class="notif-msg"><strong>Malika Karimova</strong> yangi 3 ta korporativ lid qo'shdi.</p>
+                    <span class="notif-time">35 daqiqa oldin</span>
+                  </div>
+                </li>
+                <li class="notif-item unread">
+                  <span class="notif-bullet"></span>
+                  <div class="notif-content">
+                    <p class="notif-msg"><strong>Orient Finans Bank</strong> uchrashuvi soat 16:00 ga rejalashtirildi.</p>
+                    <span class="notif-time">1 soat oldin</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Eksport tugmasi -->
+          <button class="btn btn-secondary" id="exportBtn" title="Ma'lumotlarni yuklab olish">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Eksport</span>
+          </button>
+
+          <!-- Asosiy Yangi Mijoz Tugmasi -->
+          <button class="btn btn-primary" id="openAddModalBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <span>Yangi Mijoz Qo'shish</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Asosiy Sahifa Kontenti (Scrollable Main View) -->
+      <div class="crm-content-body">
+
+        <!-- Banner va Dashboard Sarlavhasi -->
+        <div class="dashboard-greeting-bar">
+          <div class="greeting-left">
+            <h1 class="page-main-heading">Savdo va Mijozlar Boshqaruv Markazi</h1>
+            <p class="page-sub-heading">Xush kelibsiz, Alisher! Bugun korporativ mijozlar bilan 4 ta uchrashuv va 7 ta kutilayotgan bitim mavjud.</p>
+          </div>
+          <div class="greeting-right">
+            <div class="quick-stat-box">
+              <span class="qs-label">Bugungi Qilingan Qo'ng'iroqlar</span>
+              <span class="qs-val">34 / 40 ta</span>
+            </div>
+            <div class="quick-stat-divider"></div>
+            <div class="quick-stat-box">
+              <span class="qs-label">Bugungi Muvaffaqiyat</span>
+              <span class="qs-val green-text">+$14,200</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Asosiy KPI Kartochkalari (Metric Cards Row) -->
+        <section class="kpi-cards-grid" aria-label="Asosiy Savdo Ko'rsatkichlari">
+          
+          <!-- Karta 1: Jami Savdo Tushumi -->
+          <div class="kpi-card card-glow-indigo">
+            <div class="kpi-header">
+              <div class="kpi-icon-box bg-indigo-subtle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary-indigo)" stroke-width="2.2">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <span class="growth-badge positive">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+                +18.4%
+              </span>
+            </div>
+            <div class="kpi-body">
+              <span class="kpi-label">Jami Savdo Tushumi (Noyabr)</span>
+              <div class="kpi-value-row">
+                <span class="kpi-primary-number">$184,520</span>
+                <span class="kpi-sub-unit">USD</span>
+              </div>
+              <!-- Mini SVG Sparkline -->
+              <div class="kpi-sparkline">
+                <svg viewBox="0 0 120 28" class="spark-svg">
+                  <defs>
+                    <linearGradient id="gradIndigo" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35"/>
+                      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,22 Q20,16 40,20 T80,8 T120,4 L120,28 L0,28 Z" fill="url(#gradIndigo)"/>
+                  <path d="M0,22 Q20,16 40,20 T80,8 T120,4" fill="none" stroke="#6366f1" stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+                <span class="spark-note">O'tgan oyga nisbatan: +$28.6k</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Karta 2: Faol Bitimlar -->
+          <div class="kpi-card card-glow-cyan">
+            <div class="kpi-header">
+              <div class="kpi-icon-box bg-cyan-subtle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2.2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <span class="growth-badge positive">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+                +12.6%
+              </span>
+            </div>
+            <div class="kpi-body">
+              <span class="kpi-label">Jarayondagi Faol Bitimlar</span>
+              <div class="kpi-value-row">
+                <span class="kpi-primary-number">64</span>
+                <span class="kpi-sub-unit">ta loyiha</span>
+              </div>
+              <!-- Mini progress tracking -->
+              <div class="kpi-mini-stat">
+                <div class="mini-bar-track">
+                  <div class="mini-bar-fill cyan-fill" style="width: 72%;"></div>
+                </div>
+                <div class="mini-bar-labels">
+                  <span>O'rtacha qiymat: <strong>$2,880</strong></span>
+                  <span>72% reja</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Karta 3: Yangi Lidlar & Konversiya -->
+          <div class="kpi-card card-glow-emerald">
+            <div class="kpi-header">
+              <div class="kpi-icon-box bg-emerald-subtle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2.2">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <line x1="19" y1="8" x2="19" y2="14"></line>
+                  <line x1="22" y1="11" x2="16" y2="11"></line>
+                </svg>
+              </div>
+              <span class="growth-badge positive">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+                +32.8%
+              </span>
+            </div>
+            <div class="kpi-body">
+              <span class="kpi-label">Yangi Lidlar & Konversiya</span>
+              <div class="kpi-value-row">
+                <span class="kpi-primary-number">382</span>
+                <span class="kpi-sub-unit">lid</span>
+              </div>
+              <!-- Mini Sparkline Emerald -->
+              <div class="kpi-sparkline">
+                <svg viewBox="0 0 120 28" class="spark-svg">
+                  <defs>
+                    <linearGradient id="gradEmerald" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35"/>
+                      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,24 Q25,20 50,14 T90,6 T120,2 L120,28 L0,28 Z" fill="url(#gradEmerald)"/>
+                  <path d="M0,24 Q25,20 50,14 T90,6 T120,2" fill="none" stroke="#10b981" stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+                <span class="spark-note">Konversiya darajasi: 32.8%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Karta 4: Mijozlar Qoniqishi & Yopilish -->
+          <div class="kpi-card card-glow-amber">
+            <div class="kpi-header">
+              <div class="kpi-icon-box bg-amber-subtle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2.2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <span class="growth-badge neutral">
+                Barqaror
+              </span>
+            </div>
+            <div class="kpi-body">
+              <span class="kpi-label">Mijozlar Qoniqishi (CSAT)</span>
+              <div class="kpi-value-row">
+                <span class="kpi-primary-number">98.6%</span>
+                <span class="kpi-sub-unit">ijobiy</span>
+              </div>
+              <div class="kpi-mini-stat">
+                <div class="mini-bar-track">
+                  <div class="mini-bar-fill amber-fill" style="width: 98.6%;"></div>
+                </div>
+                <div class="mini-bar-labels">
+                  <span>O'rtacha yopilish davri: <strong>4.2 kun</strong></span>
+                  <span>Yuqori</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Analitika va Savdo Voronkasi Qatori (2-Ustunli Blok) -->
+        <section class="analytics-funnel-row">
+          
+          <!-- Chap Katta Blok: Savdo Dinamikasi Grafigi (60%) -->
+          <div class="content-panel sales-chart-panel">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <h2 class="panel-title">Savdo Dinamikasi va Oylik Tushum</h2>
+                <span class="panel-subtitle">Haqiqiy daromad va belgilangan reja ko'rsatkichlari solishtirmasi</span>
+              </div>
+              <div class="chart-controls">
+                <div class="chart-legend">
+                  <span class="legend-item"><span class="legend-dot actual-dot"></span>Haqiqiy Tushum</span>
+                  <span class="legend-item"><span class="legend-dot target-dot"></span>Savdo Rejasi</span>
+                </div>
+                <div class="time-filter-tabs">
+                  <button class="time-tab" data-period="haftalik">Hafta</button>
+                  <button class="time-tab active" data-period="oylik">Oylik</button>
+                  <button class="time-tab" data-period="choraklik">Chorak</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interaktiv Katta SVG Area Grafik -->
+            <div class="chart-container" id="revenueChartBox">
+              <svg viewBox="0 0 680 230" class="main-svg-chart" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="chartGradientIndigo" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#6366f1" stop-opacity="0.45"/>
+                    <stop offset="70%" stop-color="#6366f1" stop-opacity="0.08"/>
+                    <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="chartLineGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#6366f1"/>
+                    <stop offset="50%" stop-color="#38bdf8"/>
+                    <stop offset="100%" stop-color="#10b981"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Gorizontal panjara chiziqlari (Grid lines) -->
+                <line x1="40" y1="30" x2="660" y2="30" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4"/>
+                <line x1="40" y1="75" x2="660" y2="75" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4"/>
+                <line x1="40" y1="120" x2="660" y2="120" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4"/>
+                <line x1="40" y1="165" x2="660" y2="165" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4"/>
+                <line x1="40" y1="200" x2="660" y2="200" stroke="rgba(255,255,255,0.12)"/>
+
+                <!-- Y o'qi qiymatlari -->
+                <text x="32" y="34" class="chart-axis-label" text-anchor="end">$200k</text>
+                <text x="32" y="79" class="chart-axis-label" text-anchor="end">$150k</text>
+                <text x="32" y="124" class="chart-axis-label" text-anchor="end">$100k</text>
+                <text x="32" y="169" class="chart-axis-label" text-anchor="end">$50k</text>
+                <text x="32" y="204" class="chart-axis-label" text-anchor="end">$0</text>
+
+                <!-- Reja chizig'i (Dashed line) -->
+                <path d="M 60,150 L 150,135 L 250,115 L 350,90 L 450,75 L 550,60 L 640,45"
+                      fill="none" stroke="rgba(255, 255, 255, 0.28)" stroke-width="2" stroke-dasharray="5 5"/>
+
+                <!-- Haqiqiy Tushum maydoni (Area fill) -->
+                <path d="M 60,165 
+                         C 110,155 120,130 150,125 
+                         C 190,120 210,140 250,105 
+                         C 290,70 320,95 350,80 
+                         C 390,65 420,55 450,48 
+                         C 490,40 520,38 550,34 
+                         C 590,30 610,25 640,22 
+                         L 640,200 L 60,200 Z" 
+                      fill="url(#chartGradientIndigo)"/>
+
+                <!-- Haqiqiy Tushum Chizig'i (Smooth stroke) -->
+                <path d="M 60,165 
+                         C 110,155 120,130 150,125 
+                         C 190,120 210,140 250,105 
+                         C 290,70 320,95 350,80 
+                         C 390,65 420,55 450,48 
+                         C 490,40 520,38 550,34 
+                         C 590,30 610,25 640,22" 
+                      fill="none" stroke="url(#chartLineGrad)" stroke-width="3.5" stroke-linecap="round"/>
+
+                <!-- Nuqtalar (Data points with hover) -->
+                <g class="chart-point-group" data-month="May" data-val="$64,000">
+                  <circle cx="60" cy="165" r="4.5" class="chart-point"/>
+                </g>
+                <g class="chart-point-group" data-month="Iyun" data-val="$92,500">
+                  <circle cx="150" cy="125" r="4.5" class="chart-point"/>
+                </g>
+                <g class="chart-point-group" data-month="Iyul" data-val="$115,000">
+                  <circle cx="250" cy="105" r="4.5" class="chart-point"/>
+                </g>
+                <g class="chart-point-group" data-month="Avgust" data-val="$138,200">
+                  <circle cx="350" cy="80" r="4.5" class="chart-point"/>
+                </g>
+                <g class="chart-point-group" data-month="Sentyabr" data-val="$156,000">
+                  <circle cx="450" cy="48" r="4.5" class="chart-point"/>
+                </g>
+                <g class="chart-point-group" data-month="Oktyabr" data-val="$172,400">
+                  <circle cx="550" cy="34" r="4.5" class="chart-point"/>
+                </g>
+                <g class="chart-point-group" data-month="Noyabr (Hozir)" data-val="$184,520">
+                  <circle cx="640" cy="22" r="6" class="chart-point pulse-point"/>
+                </g>
+
+                <!-- X o'qi oylar belgilari -->
+                <text x="60" y="220" class="chart-axis-label" text-anchor="middle">May</text>
+                <text x="150" y="220" class="chart-axis-label" text-anchor="middle">Iyun</text>
+                <text x="250" y="220" class="chart-axis-label" text-anchor="middle">Iyul</text>
+                <text x="350" y="220" class="chart-axis-label" text-anchor="middle">Avgust</text>
+                <text x="450" y="220" class="chart-axis-label" text-anchor="middle">Sentyabr</text>
+                <text x="550" y="220" class="chart-axis-label" text-anchor="middle">Oktyabr</text>
+                <text x="640" y="220" class="chart-axis-label font-bold" text-anchor="middle" fill="#38bdf8">Noyabr</text>
+              </svg>
+
+              <!-- Tooltip elementi -->
+              <div class="chart-tooltip" id="chartTooltip">
+                <span class="tooltip-title" id="ttMonth">Noyabr 2026</span>
+                <span class="tooltip-amount" id="ttAmount">$184,520</span>
+              </div>
+            </div>
+
+            <!-- Grafik ostidagi qo'shimcha ko'rsatkichlar -->
+            <div class="chart-footer-metrics">
+              <div class="chart-metric-item">
+                <span class="cm-title">O'rtacha oylik tushum:</span>
+                <span class="cm-value">$132,450</span>
+              </div>
+              <div class="chart-metric-item">
+                <span class="cm-title">Maksimal ko'rsatkich:</span>
+                <span class="cm-value green-text">$184,520 (Rekord)</span>
+              </div>
+              <div class="chart-metric-item">
+                <span class="cm-title">Reja bajarilishi:</span>
+                <span class="cm-value blue-text">86.4% / $210k</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- O'ng Blok: Savdo Voronkasi (Sales Pipeline Funnel - 40%) -->
+          <div class="content-panel pipeline-funnel-panel">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <h2 class="panel-title">Savdo Voronkasi (Pipeline)</h2>
+                <span class="panel-subtitle">Lidlardan to'lovgacha bosqichlar holati</span>
+              </div>
+              <span class="funnel-rate-badge">Konversiya: 32.8%</span>
+            </div>
+
+            <div class="funnel-container">
+              
+              <!-- 1-bosqich: Yangi Lidlar -->
+              <div class="funnel-step">
+                <div class="funnel-info">
+                  <div class="funnel-name">
+                    <span class="step-num">1</span>
+                    <span class="step-title">Yangi Lidlar (Kiruvchi so'rovlar)</span>
+                  </div>
+                  <div class="funnel-stats">
+                    <strong>1,420 ta</strong>
+                    <span class="stat-amt">$520,000</span>
+                  </div>
+                </div>
+                <div class="funnel-bar-track">
+                  <div class="funnel-bar-fill f-step-1" style="width: 100%;"></div>
+                </div>
+              </div>
+
+              <!-- 2-bosqich: Dastlabki Muloqot -->
+              <div class="funnel-step">
+                <div class="funnel-info">
+                  <div class="funnel-name">
+                    <span class="step-num">2</span>
+                    <span class="step-title">Dastlabki Muloqot & Ehtiyoj</span>
+                  </div>
+                  <div class="funnel-stats">
+                    <strong>890 ta</strong>
+                    <span class="stat-amt">$340,000</span>
+                  </div>
+                </div>
+                <div class="funnel-bar-track">
+                  <div class="funnel-bar-fill f-step-2" style="width: 63%;"></div>
+                </div>
+              </div>
+
+              <!-- 3-bosqich: Tijorat Taklifi -->
+              <div class="funnel-step">
+                <div class="funnel-info">
+                  <div class="funnel-name">
+                    <span class="step-num">3</span>
+                    <span class="step-title">Tijorat Taklifi Yuborildi</span>
+                  </div>
+                  <div class="funnel-stats">
+                    <strong>410 ta</strong>
+                    <span class="stat-amt">$195,000</span>
+                  </div>
+                </div>
+                <div class="funnel-bar-track">
+                  <div class="funnel-bar-fill f-step-3" style="width: 38%;"></div>
+                </div>
+              </div>
+
+              <!-- 4-bosqich: Muzokaralar va Shartnoma -->
+              <div class="funnel-step">
+                <div class="funnel-info">
+                  <div class="funnel-name">
+                    <span class="step-num">4</span>
+                    <span class="step-title">Shartnoma Imzolash Arafasida</span>
+                  </div>
+                  <div class="funnel-stats">
+                    <strong>165 ta</strong>
+                    <span class="stat-amt">$92,000</span>
+                  </div>
+                </div>
+                <div class="funnel-bar-track">
+                  <div class="funnel-bar-fill f-step-4" style="width: 22%;"></div>
+                </div>
+              </div>
+
+              <!-- 5-bosqich: Muvaffaqiyatli Bitim -->
+              <div class="funnel-step">
+                <div class="funnel-info">
+                  <div class="funnel-name">
+                    <span class="step-num success-num">✓</span>
+                    <span class="step-title green-text">Muvaffaqiyatli Bitim (Yutildi)</span>
+                  </div>
+                  <div class="funnel-stats">
+                    <strong class="green-text">74 ta</strong>
+                    <span class="stat-amt green-text">$184,520</span>
+                  </div>
+                </div>
+                <div class="funnel-bar-track">
+                  <div class="funnel-bar-fill f-step-5" style="width: 14%;"></div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="funnel-summary-box">
+              <div class="fs-item">
+                <span class="fs-label">O'rtacha Sikl:</span>
+                <span class="fs-val">12 kun</span>
+              </div>
+              <div class="fs-item">
+                <span class="fs-label">Yo'qotilganlar:</span>
+                <span class="fs-val red-text">14.2%</span>
+              </div>
+              <div class="fs-item">
+                <span class="fs-label">Top Manba:</span>
+                <span class="fs-val">LinkedIn & Tavsiya</span>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- Asosiy Mijozlar va Bitimlar Jadvali Bloki -->
+        <section class="content-panel table-panel">
+          
+          <!-- Jadval Tepasi (Filterlar va Qidiruv) -->
+          <div class="table-top-controls">
+            
+            <div class="table-title-area">
+              <h2 class="panel-title">Mijozlar va Faol Bitimlar Ro'yxati</h2>
+              <span class="table-counter-tag"><span id="tableRowsCount">8</span> ta yozuv ko'rsatilmoqda</span>
+            </div>
+
+            <!-- Tab filtrlari -->
+            <div class="table-filter-tabs">
+              <button class="t-filter-btn active" data-filter="all">Barchasi (48)</button>
+              <button class="t-filter-btn" data-filter="Yangi Lid">Yangi Lidlar (14)</button>
+              <button class="t-filter-btn" data-filter="Muzokarada">Muzokarada (11)</button>
+              <button class="t-filter-btn" data-filter="Shartnoma">Shartnoma (12)</button>
+              <button class="t-filter-btn" data-filter="Yutildi">Yutildi (22)</button>
+            </div>
+
+            <!-- Jadval ichki qidiruvi va qo'shimcha filtrlar -->
+            <div class="table-action-tools">
+              <div class="table-search-box">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="tableSearchInput" placeholder="Jadvaldan izlash...">
+              </div>
+
+              <select id="agentFilterSelect" class="table-select-filter">
+                <option value="">Barcha Menejerlar</option>
+                <option value="Alisher Zokirov">Alisher Zokirov</option>
+                <option value="Malika Karimova">Malika Karimova</option>
+                <option value="Jasur Bekmurodov">Jasur Bekmurodov</option>
+                <option value="Nilufar Rahimova">Nilufar Rahimova</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- Keng qamrovli Mijozlar Jadvali -->
+          <div class="table-responsive-wrapper">
+            <table class="crm-data-table" id="dealsTable">
+              <thead>
+                <tr>
+                  <th width="280">Mijoz & Kompaniya</th>
+                  <th width="200">Aloqa Ma'lumotlari</th>
+                  <th width="150">Bitim Summasi</th>
+                  <th width="160">Voronka Bosqichi</th>
+                  <th width="180">Mas'ul Menejer</th>
+                  <th width="140">Oxirgi Faollik</th>
+                  <th width="140" class="text-right">Amallar</th>
+                </tr>
+              </thead>
+              <tbody id="dealsTableBody">
+
+                <!-- 1-Mijoz -->
+                <tr data-status="Shartnoma" data-agent="Alisher Zokirov">
+                  <td>
+                    <div class="client-cell">
+                      <div class="client-logo-avatar artel-bg">AE</div>
+                      <div class="client-text">
+                        <span class="client-name">Rustam Komilov</span>
+                        <span class="company-name">Artel Electronics Holding</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="contact-info">
+                      <span class="contact-phone">+998 (90) 123-45-67</span>
+                      <span class="contact-email">r.komilov@artel.uz</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="deal-value-cell">
+                      <span class="amount-number">$28,500</span>
+                      <span class="deal-type-badge">Yillik Litsenziya</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="status-pill status-contract">
+                      <span class="status-dot"></span>
+                      Shartnoma
+                    </span>
+                  </td>
+                  <td>
+                    <div class="agent-chip">
+                      <img src="assets/images/manager1.jpg" alt="Alisher Z." class="agent-avatar-mini">
+                      <span>Alisher Zokirov</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="activity-time">
+                      <span class="time-main">Bugun, 14:20</span>
+                      <span class="time-sub">Qo'ng'iroq bo'ldi</span>
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="row-actions">
+                      <button class="action-btn call-action" title="Qo'ng'iroq qilish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn edit-action" title="Tahrirlash">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn delete-action" title="O'chirish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="3 6 5 6 21 6"></polyline>
+                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- 2-Mijoz -->
+                <tr data-status="Yutildi" data-agent="Malika Karimova">
+                  <td>
+                    <div class="client-cell">
+                      <div class="client-logo-avatar uzum-bg">UM</div>
+                      <div class="client-text">
+                        <span class="client-name">Dildora Yusupova</span>
+                        <span class="company-name">Uzum Market LLC</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="contact-info">
+                      <span class="contact-phone">+998 (97) 777-88-99</span>
+                      <span class="contact-email">d.yusupova@uzum.com</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="deal-value-cell">
+                      <span class="amount-number green-text">$42,000</span>
+                      <span class="deal-type-badge">Korporativ ERP</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="status-pill status-won">
+                      <span class="status-dot"></span>
+                      Yutildi
+                    </span>
+                  </td>
+                  <td>
+                    <div class="agent-chip">
+                      <img src="assets/images/manager2.jpg" alt="Malika K." class="agent-avatar-mini">
+                      <span>Malika Karimova</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="activity-time">
+                      <span class="time-main">Kecha, 18:45</span>
+                      <span class="time-sub">To'lov tasdiqlandi</span>
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="row-actions">
+                      <button class="action-btn call-action" title="Qo'ng'iroq qilish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn edit-action" title="Tahrirlash">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn delete-action" title="O'chirish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="3 6 5 6 21 6"></polyline>
+                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- 3-Mijoz -->
+                <tr data-status="Muzokarada" data-agent="Jasur Bekmurodov">
+                  <td>
+                    <div class="client-cell">
+                      <div class="client-logo-avatar orient-bg">OF</div>
+                      <div class="client-text">
+                        <span class="client-name">Sardor Aliyev</span>
+                        <span class="company-name">Orient Finans Bank</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="contact-info">
+                      <span class="contact-phone">+998 (71) 200-11-22</span>
+                      <span class="contact-email">s.aliyev@ofb.uz</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="deal-value-cell">
+                      <span class="amount-number">$35,000</span>
+                      <span class="deal-type-badge">Xavfsizlik & Integratsiya</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="status-pill status-negotiation">
+                      <span class="status-dot"></span>
+                      Muzokarada
+                    </span>
+                  </td>
+                  <td>
+                    <div class="agent-chip">
+                      <div class="avatar-letter j-avatar">J</div>
+                      <span>Jasur Bekmurodov</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="activity-time">
+                      <span class="time-main">Bugun, 11:30</span>
+                      <span class="time-sub">Taklif ko'rib chiqilmoqda</span>
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="row-actions">
+                      <button class="action-btn call-action" title="Qo'ng'iroq qilish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn edit-action" title="Tahrirlash">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn delete-action" title="O'chirish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="3 6 5 6 21 6"></polyline>
+                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- 4-Mijoz -->
+                <tr data-status="Yangi Lid" data-agent="Nilufar Rahimova">
+                  <td>
+                    <div class="client-cell">
+                      <div class="client-logo-avatar itpark-bg">IT</div>
+                      <div class="client-text">
+                        <span class="client-name">Farhod Mahmudov</span>
+                        <span class="company-name">IT Park Uzbekistan</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="contact-info">
+                      <span class="contact-phone">+998 (99) 811-33-44</span>
+                      <span class="contact-email">f.mahmudov@itpark.uz</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="deal-value-cell">
+                      <span class="amount-number">$18,000</span>
+                      <span class="deal-type-badge">SaaS Obuna</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="status-pill status-lead">
+                      <span class="status-dot"></span>
+                      Yangi Lid
+                    </span>
+                  </td>
+                  <td>
+                    <div class="agent-chip">
+                      <div class="avatar-letter n-avatar">N</div>
+                      <span>Nilufar Rahimova</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="activity-time">
+                      <span class="time-main">Bugun, 09:15</span>
+                      <span class="time-sub">Saytdan so'rov tushdi</span>
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="row-actions">
+                      <button class="action-btn call-action" title="Qo'ng'iroq qilish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn edit-action" title="Tahrirlash">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn delete-action" title="O'chirish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="3 6 5 6 21 6"></polyline>
+                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- 5-Mijoz -->
+                <tr data-status="Shartnoma" data-agent="Alisher Zokirov">
+                  <td>
+                    <div class="client-cell">
+                      <div class="client-logo-avatar akfa-bg">AK</div>
+                      <div class="client-text">
+                        <span class="client-name">Bobur Mirzayev</span>
+                        <span class="company-name">Akfa Building Materials</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="contact-info">
+                      <span class="contact-phone">+998 (90) 990-00-11</span>
+                      <span class="contact-email">b.mirzayev@akfa.uz</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="deal-value-cell">
+                      <span class="amount-number">$24,800</span>
+                      <span class="deal-type-badge">B2B Savdo Tizimi</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="status-pill status-contract">
+                      <span class="status-dot"></span>
+                      Shartnoma
+                    </span>
+                  </td>
+                  <td>
+                    <div class="agent-chip">
+                      <img src="assets/images/manager1.jpg" alt="Alisher Z." class="agent-avatar-mini">
+                      <span>Alisher Zokirov</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="activity-time">
+                      <span class="time-main">Kecha, 16:10</span>
+                      <span class="time-sub">Yurist tasdiqladi</span>
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="row-actions">
+                      <button class="action-btn call-action" title="Qo'ng'iroq qilish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn edit-action" title="Tahrirlash">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn delete-action" title="O'chirish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="3 6 5 6 21 6"></polyline>
+                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- 6-Mijoz -->
+                <tr data-status="Yutildi" data-agent="Malika Karimova">
+                  <td>
+                    <div class="client-cell">
+                      <div class="client-logo-avatar korzinka-bg">KR</div>
+                      <div class="client-text">
+                        <span class="client-name">Zafarbek Usmonov</span>
+                        <span class="company-name">Korzinka Retail Chain</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="contact-info">
+                      <span class="contact-phone">+998 (78) 140-14-14</span>
+                      <span class="contact-email">z.usmonov@korzinka.uz</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="deal-value-cell">
+                      <span class="amount-number green-text">$31,500</span>
+                      <span class="deal-type-badge">Sodiqlik Tizimi</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="status-pill status-won">
+                      <span class="status-dot"></span>
+                      Yutildi
+                    </span>
+                  </td>
+                  <td>
+                    <div class="agent-chip">
+                      <img src="assets/images/manager2.jpg" alt="Malika K." class="agent-avatar-mini">
+                      <span>Malika Karimova</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="activity-time">
+                      <span class="time-main">30 Okt, 12:00</span>
+                      <span class="time-sub">Loyihaga start berildi</span>
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="row-actions">
+                      <button class="action-btn call-action" title="Qo'ng'iroq qilish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn edit-action" title="Tahrirlash">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn delete-action" title="O'chirish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="3 6 5 6 21 6"></polyline>
+                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- 7-Mijoz -->
+                <tr data-status="Muzokarada" data-agent="Jasur Bekmurodov">
+                  <td>
+                    <div class="client-cell">
+                      <div class="client-logo-avatar murad-bg">MB</div>
+                      <div class="client-text">
+                        <span class="client-name">Shavkat Tursunov</span>
+                        <span class="company-name">Murad Buildings Development</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="contact-info">
+                      <span class="contact-phone">+998 (90) 333-22-11</span>
+                      <span class="contact-email">sh.tursunov@mb.uz</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="deal-value-cell">
+                      <span class="amount-number">$19,200</span>
+                      <span class="deal-type-badge">Ko'chmas Mulk CRM</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="status-pill status-negotiation">
+                      <span class="status-dot"></span>
+                      Muzokarada
+                    </span>
+                  </td>
+                  <td>
+                    <div class="agent-chip">
+                      <div class="avatar-letter j-avatar">J</div>
+                      <span>Jasur Bekmurodov</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="activity-time">
+                      <span class="time-main">29 Okt, 15:30</span>
+                      <span class="time-sub">Demo taqdimot o'tdi</span>
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="row-actions">
+                      <button class="action-btn call-action" title="Qo'ng'iroq qilish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn edit-action" title="Tahrirlash">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn delete-action" title="O'chirish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="3 6 5 6 21 6"></polyline>
+                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- 8-Mijoz -->
+                <tr data-status="Yangi Lid" data-agent="Nilufar Rahimova">
+                  <td>
+                    <div class="client-cell">
+                      <div class="client-logo-avatar chust-bg">CT</div>
+                      <div class="client-text">
+                        <span class="client-name">Anvar Qosimov</span>
+                        <span class="company-name">Chust Textile Export</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="contact-info">
+                      <span class="contact-phone">+998 (69) 220-40-50</span>
+                      <span class="contact-email">a.qosimov@chusttextile.com</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="deal-value-cell">
+                      <span class="amount-number">$15,400</span>
+                      <span class="deal-type-badge">Eksport Boshqaruvi</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="status-pill status-lead">
+                      <span class="status-dot"></span>
+                      Yangi Lid
+                    </span>
+                  </td>
+                  <td>
+                    <div class="agent-chip">
+                      <div class="avatar-letter n-avatar">N</div>
+                      <span>Nilufar Rahimova</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="activity-time">
+                      <span class="time-main">Bugun, 08:40</span>
+                      <span class="time-sub">Telegram bot orqali</span>
+                    </div>
+                  </td>
+                  <td class="text-right">
+                    <div class="row-actions">
+                      <button class="action-btn call-action" title="Qo'ng'iroq qilish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn edit-action" title="Tahrirlash">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                      </button>
+                      <button class="action-btn delete-action" title="O'chirish">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="3 6 5 6 21 6"></polyline>
+                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Jadval tagidagi Pagination va Ma'lumot -->
+          <div class="table-pagination-footer">
+            <div class="pagination-info">
+              Jami <strong>48</strong> ta korporativ mijozdan <strong>1 - 8</strong> oralig'i
+            </div>
+            <div class="pagination-buttons">
+              <button class="page-nav-btn disabled" disabled>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                Oldingi
+              </button>
+              <button class="page-num-btn active">1</button>
+              <button class="page-num-btn">2</button>
+              <button class="page-num-btn">3</button>
+              <button class="page-num-btn">...</button>
+              <button class="page-num-btn">6</button>
+              <button class="page-nav-btn">
+                Keyingi
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Pastki 2-Ustunli Blok: Oxirgi Faolliklar va Menejerlar Reytingi -->
+        <section class="bottom-split-row">
+          
+          <!-- Chap Blok: So'nggi Amallar va Aloqalar Tarixi (55%) -->
+          <div class="content-panel timeline-panel">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <h2 class="panel-title">Jonli Aloqalar va Faollik Tarixi</h2>
+                <span class="panel-subtitle">Mijozlar bilan so'nggi 24 soatdagi muloqot va hodisalar</span>
+              </div>
+              <span class="live-pulse-badge">Jonli Oqim</span>
+            </div>
+
+            <div class="activity-timeline">
+              
+              <!-- Timeline hodisa 1 -->
+              <div class="timeline-item">
+                <div class="timeline-icon-box icon-phone">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header-line">
+                    <span class="tl-user">Alisher Zokirov</span>
+                    <span class="tl-action">mijoz bilan telefon orqali gaplashdi:</span>
+                    <span class="tl-target">Artel Electronics</span>
+                    <span class="tl-timestamp">14:20</span>
+                  </div>
+                  <p class="tl-description">"Yillik litsenziya bo'yicha 15% korporativ chegirma kelishildi. Yakuniy shartnoma PDF formatida yuborildi."</p>
+                </div>
+              </div>
+
+              <!-- Timeline hodisa 2 -->
+              <div class="timeline-item">
+                <div class="timeline-icon-box icon-contract">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header-line">
+                    <span class="tl-user">Malika Karimova</span>
+                    <span class="tl-action">yangi bitimni muvaffaqiyatli yopdi:</span>
+                    <span class="tl-target green-text">Uzum Market ($42,000)</span>
+                    <span class="tl-timestamp">12:15</span>
+                  </div>
+                  <p class="tl-description">"To'lov to'liq qabul qilindi. Mijozga ERP tizimi boshqaruv kalitlari topshirildi."</p>
+                </div>
+              </div>
+
+              <!-- Timeline hodisa 3 -->
+              <div class="timeline-item">
+                <div class="timeline-icon-box icon-meeting">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header-line">
+                    <span class="tl-user">Jasur Bekmurodov</span>
+                    <span class="tl-action">onlayn uchrashuv o'tkazdi:</span>
+                    <span class="tl-target">Orient Finans Bank</span>
+                    <span class="tl-timestamp">10:00</span>
+                  </div>
+                  <p class="tl-description">"Bank IT departamenti bilan integratsiya API arxitekturasi muhokama qilindi."</p>
+                </div>
+              </div>
+
+              <!-- Timeline hodisa 4 -->
+              <div class="timeline-item">
+                <div class="timeline-icon-box icon-lead">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header-line">
+                    <span class="tl-user">Tizim (Sayt Webhook)</span>
+                    <span class="tl-action">yangi korporativ lid qabul qildi:</span>
+                    <span class="tl-target">IT Park Uzbekistan</span>
+                    <span class="tl-timestamp">09:15</span>
+                  </div>
+                  <p class="tl-description">"Kompaniya 120 ta xodim uchun CRM litsenziyasi tariflarini so'radi."</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- O'ng Blok: Top Savdo Menejerlari Reytingi (45%) -->
+          <div class="content-panel leaderboard-panel">
+            <div class="panel-header">
+              <div class="panel-title-group">
+                <h2 class="panel-title">Menejerlar Reytingi (Noyabr)</h2>
+                <span class="panel-subtitle">Savdo ko'rsatkichlari va KPI bajarilishi</span>
+              </div>
+              <span class="award-cup-icon" title="Oylik bonus">🏆 Bonus Jamg'armasi</span>
+            </div>
+
+            <div class="leaderboard-list">
+              
+              <!-- 1-Menejer: Malika -->
+              <div class="leaderboard-card rank-first">
+                <div class="rank-badge gold-rank">1</div>
+                <img src="assets/images/manager2.jpg" alt="Malika Karimova" class="leader-avatar">
+                <div class="leader-info">
+                  <span class="leader-name">Malika Karimova</span>
+                  <span class="leader-title">Katta Mijozlar Menejeri</span>
+                  <div class="leader-progress-wrap">
+                    <div class="leader-bar" style="width: 114%;"></div>
+                  </div>
+                </div>
+                <div class="leader-metrics">
+                  <span class="leader-revenue">$73,500</span>
+                  <span class="leader-kpi green-text">114% (Rejadan ortiq)</span>
+                </div>
+              </div>
+
+              <!-- 2-Menejer: Alisher -->
+              <div class="leaderboard-card rank-second">
+                <div class="rank-badge silver-rank">2</div>
+                <img src="assets/images/manager1.jpg" alt="Alisher Zokirov" class="leader-avatar">
+                <div class="leader-info">
+                  <span class="leader-name">Alisher Zokirov</span>
+                  <span class="leader-title">Bosh Savdo Menejeri</span>
+                  <div class="leader-progress-wrap">
+                    <div class="leader-bar" style="width: 92%;"></div>
+                  </div>
+                </div>
+                <div class="leader-metrics">
+                  <span class="leader-revenue">$53,300</span>
+                  <span class="leader-kpi blue-text">92% bajarildi</span>
+                </div>
+              </div>
+
+              <!-- 3-Menejer: Jasur -->
+              <div class="leaderboard-card rank-third">
+                <div class="rank-badge bronze-rank">3</div>
+                <div class="leader-avatar text-avatar j-avatar">J</div>
+                <div class="leader-info">
+                  <span class="leader-name">Jasur Bekmurodov</span>
+                  <span class="leader-title">B2B Integrator</span>
+                  <div class="leader-progress-wrap">
+                    <div class="leader-bar" style="width: 78%;"></div>
+                  </div>
+                </div>
+                <div class="leader-metrics">
+                  <span class="leader-revenue">$34,200</span>
+                  <span class="leader-kpi cyan-text">78% bajarildi</span>
+                </div>
+              </div>
+
+              <!-- 4-Menejer: Nilufar -->
+              <div class="leaderboard-card">
+                <div class="rank-badge standard-rank">4</div>
+                <div class="leader-avatar text-avatar n-avatar">N</div>
+                <div class="leader-info">
+                  <span class="leader-name">Nilufar Rahimova</span>
+                  <span class="leader-title">Kiruvchi Lidlar Bo'yicha Mutaxassis</span>
+                  <div class="leader-progress-wrap">
+                    <div class="leader-bar" style="width: 65%;"></div>
+                  </div>
+                </div>
+                <div class="leader-metrics">
+                  <span class="leader-revenue">$23,520</span>
+                  <span class="leader-kpi">65% bajarildi</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Yangi Mijoz va Bitim Qo'shish Modali -->
+  <div class="modal-backdrop" id="addClientModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <div class="modal-icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <line x1="19" y1="8" x2="19" y2="14"></line>
+              <line x1="22" y1="11" x2="16" y2="11"></line>
+            </svg>
+          </div>
+          <div>
+            <h3 class="modal-title">Yangi Mijoz va Bitim Ro'yxatdan O'tkazish</h3>
+            <p class="modal-subtitle">Tizimga yangi korporativ mijoz yoki savdo so'rovini kiriting</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="closeAddModalBtn" title="Yopish">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <form id="addClientForm" class="modal-form">
+        <div class="form-grid-2">
+          
+          <div class="form-group">
+            <label for="clientFullName" class="form-label">Mijozning F.I.SH <span class="required">*</span></label>
+            <input type="text" id="clientFullName" required placeholder="Masalan: Sardor Qodirov" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label for="companyName" class="form-label">Kompaniya yoki Brend Nomi <span class="required">*</span></label>
+            <input type="text" id="companyName" required placeholder="Masalan: TexnoSoft LLC" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label for="clientPhone" class="form-label">Telefon Raqami <span class="required">*</span></label>
+            <input type="tel" id="clientPhone" required placeholder="+998 (90) 000-00-00" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label for="clientEmail" class="form-label">Elektron Pochta (Email)</label>
+            <input type="email" id="clientEmail" placeholder="info@texnosoft.uz" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label for="dealAmount" class="form-label">Taxminiy Bitim Summasi ($) <span class="required">*</span></label>
+            <input type="number" id="dealAmount" required placeholder="Masalan: 25000" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label for="dealStage" class="form-label">Savdo Voronkasi Bosqichi <span class="required">*</span></label>
+            <select id="dealStage" required class="form-select">
+              <option value="Yangi Lid">1. Yangi Lid (So'rov)</option>
+              <option value="Muzokarada">2. Muzokarada (Ehtiyoj aniqlanmoqda)</option>
+              <option value="Taklif">3. Tijorat Taklifi Yuborildi</option>
+              <option value="Shartnoma">4. Shartnoma Imzolashda</option>
+              <option value="Yutildi">5. Muvaffaqiyatli Bitim (Yutildi)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="assignedAgent" class="form-label">Mas'ul Menejer <span class="required">*</span></label>
+            <select id="assignedAgent" required class="form-select">
+              <option value="Alisher Zokirov">Alisher Zokirov (Bosh Menejer)</option>
+              <option value="Malika Karimova">Malika Karimova (Top Menejer)</option>
+              <option value="Jasur Bekmurodov">Jasur Bekmurodov (B2B Mutaxassis)</option>
+              <option value="Nilufar Rahimova">Nilufar Rahimova (Lid Men.)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="dealCategory" class="form-label">Loyiha Yo'nalishi</label>
+            <input type="text" id="dealCategory" placeholder="Masalan: Bulutli CRM / ERP" class="form-input">
+          </div>
+
+        </div>
+
+        <div class="form-group full-width">
+          <label for="dealNote" class="form-label">Qo'shimcha Izoh va Eslatma</label>
+          <textarea id="dealNote" rows="3" placeholder="Mijozning asosiy talablari, integratsiya muddatlari va kelishuv shartlari..." class="form-textarea"></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="cancelModalBtn">Bekor qilish</button>
+          <button type="submit" class="btn btn-primary" id="saveClientBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Mijozni Saqlash</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bildirishnoma (Toast Alert) -->
+  <div class="toast-notification" id="crmToast">
+    <div class="toast-icon" id="toastIcon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+    </div>
+    <div class="toast-content">
+      <h4 class="toast-title" id="toastTitle">Muvaffaqiyatli saqlandi</h4>
+      <p class="toast-desc" id="toastDesc">Yangi mijoz va bitim ma'lumotlar bazasiga qo'shildi.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
